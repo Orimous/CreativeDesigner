@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #FFEED9;
+  font-family: "Work Sans", sans-serif;
+}
+
+section.dark {
+  background: rgba(255, 221, 191, 0.5);
+}
+section.about {
+  height: 100vh;
+  background: url("../img/about_men.png") no-repeat bottom right 5%, rgba(255, 221, 191, 0.5);
+}
+
+h1 {
+  font-family: "Eczar", serif;
+  color: #403930;
+  letter-spacing: 0.08rem;
+}
+
+h2 {
+  font-family: "Eczar", serif;
+  color: #403930;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+h3 {
+  font-family: "Eczar", serif;
+  color: #403930;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #594F43;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.hello_block {
+  background: #FFDDBF;
+  width: fit-content;
+  border-radius: 0.625rem;
+}
+
+.about_me_button {
+  text-decoration: none;
+  width: 20rem;
+}
+.about_me_button.blue {
+  color: #F3F2FF;
+  background: #4E5E80;
+}
+.about_me_button.transparent {
+  border: 4px solid #4D5566;
+  color: #4D5566;
+  background: #FFEED9;
+}
+
+header {
+  height: 100vh;
+  background: url("../img/main_men.png") no-repeat bottom right 5%;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.works .project {
+  height: 25rem;
+  padding-left: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: #FFF8F2;
+}
+.works a {
+  display: block;
+  padding-top: 1.5rem;
+  text-decoration: none;
+  color: #4E5E80;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.blogs span {
+  padding-top: 1.25rem;
+}
+.blogs img {
+  cursor: pointer;
+}
+
+.about_me p {
+  font-size: 1.25rem;
+}
+
+.contact_me {
+  text-decoration: none;
+  border-radius: 1rem;
+  border: 4px solid #4D5566;
+  color: #4D5566;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 1.5rem 3.5rem;
+  display: block;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=style.css.map */

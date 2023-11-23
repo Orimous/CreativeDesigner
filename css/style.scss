@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$backgroundLight: #FFEED9;
+$backgroundDark: rgba(255, 221, 191, 0.50);
+$textColor: #403930;
+$paragraphColor: #594F43;
+$bottomSolidColor: #4D5566;
+$projectBackground: #FFF8F2;
+$projectLink: #4E5E80;
+
+body {
+  scroll-behavior: smooth;
+  background: $backgroundLight;
+  font-family: 'Work Sans', sans-serif;
+}
+
+section {
+  &.dark {
+    background: $backgroundDark;
+  }
+  &.about {
+    height: 100vh;
+    background: url("../img/about_men.png") no-repeat bottom right 5%, $backgroundDark;
+  }
+}
+
+h1 {
+  font-family: 'Eczar', serif;
+  color: $textColor;
+  letter-spacing: 0.08rem;
+}
+
+h2 {
+  font-family: 'Eczar', serif;
+  color: $textColor;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+h3 {
+  font-family: 'Eczar', serif;
+  color: $textColor;
+  font-weight: 600;
+}
+
+nav {
+  a {
+    text-decoration: none;
+    color: $paragraphColor;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+.hello_block {
+  background: #FFDDBF;
+  width: fit-content;
+  border-radius: 0.625rem;
+}
+
+.about_me_button {
+  text-decoration: none;
+  width: 20rem;
+  &.blue {
+    color: #F3F2FF;
+    background: $projectLink;
+  }
+  &.transparent {
+    border: 4px solid $bottomSolidColor;
+    color: $bottomSolidColor;
+    background: $backgroundLight;
+  }
+}
+
+header {
+  height: 100vh;
+  background: url("../img/main_men.png") no-repeat bottom right 5%;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  .project {
+    height: 25rem;
+    padding-left: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+    background: $projectBackground;
+  }
+  a {
+    display: block;
+    padding-top: 1.5rem;
+    text-decoration: none;
+    color: $projectLink;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+.blogs {
+  span {
+    padding-top: 1.25rem;
+  }
+  img {
+    cursor: pointer;
+  }
+
+}
+
+.about_me {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.contact_me {
+  text-decoration: none;
+  border-radius: 1rem;
+  border: 4px solid $bottomSolidColor;
+  color: $bottomSolidColor;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 1.5rem 3.5rem;
+  display: block;
+  width: fit-content;
+}
+
